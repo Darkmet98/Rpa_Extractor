@@ -67,7 +67,7 @@ namespace RpaExtractor
         private static void Disclaimer()
         {
             Console.WriteLine("RpaExtractor — A rpa extractor for renpy games by Darkmet98.\nVersion: 1.0");
-            Console.WriteLine("Thanks to Pleonex for the Yarhl libraries.");
+            Console.WriteLine("Thanks to Pleonex for the Yarhl libraries and Shizmob for the python release (rpatool) (Some of work is based from their sources).");
             Console.WriteLine("This program is licensed with a GPL V3 license.");
         }
     }
