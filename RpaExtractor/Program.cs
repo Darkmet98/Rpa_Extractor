@@ -30,7 +30,7 @@ namespace RpaExtractor
             Disclaimer();
             if(args == null || args.Length == 0)
             {
-                Console.WriteLine("\nUsage: RpaExtractor.exe \"File.rpa\"");
+                Console.WriteLine("\nUsage: RpaExtractor \"File.rpa\"");
                 return;
 
             }
@@ -58,7 +58,7 @@ namespace RpaExtractor
                 {
                     if (child.Stream == null)
                         continue;
-                    string output = Path.Combine(foldername + "/" + child.Name);
+                    string output = Path.Combine(foldername + Path.DirectorySeparatorChar + child.Name.Replace('\\', Path.DirectorySeparatorChar));
                     child.Stream.WriteTo(output);
                 }
             }
@@ -66,7 +66,7 @@ namespace RpaExtractor
 
         private static void Disclaimer()
         {
-            Console.WriteLine("RpaExtractor — A rpa extractor for renpy games by Darkmet98.\nVersion: 1.0");
+            Console.WriteLine("RpaExtractor — A rpa extractor for renpy games by Darkmet98.\nVersion: 1.1");
             Console.WriteLine("Thanks to Pleonex for the Yarhl libraries and Shizmob for the python release (rpatool) (Some of work is based from their sources).");
             Console.WriteLine("This program is licensed with a GPL V3 license.");
         }

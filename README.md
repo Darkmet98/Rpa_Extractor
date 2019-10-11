@@ -2,7 +2,16 @@
 A simple Rpa extractor for Renpy games
 
 ## Usage
-[mono] RpaExtractor.exe "File.rpa"
+RpaExtractor "File.rpa"
+
+## Changelog
+
+### 1.0
+* Initial release.
+
+### 1.1
+* Upgraded to Net Core 3.
+* Fixed folder generation on Linux.
 
 ## Credits
 * Pleonex for Yarhl libraries
